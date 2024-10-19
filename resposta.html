@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - Portfolio Valmor Tambosi Junior</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Resposta</h1>
+    </header>
+
+    <main>
+        <h2>Dados Enviados</h2>
+        <p>Nome: <span id="nomeResposta"></span></p>
+        <p>Email: <span id="emailResposta"></span></p>
+        <p>Mensagem: <span id="mensagemResposta"></span></p>
+
+        <button id="voltarBtn">Voltar para o Início</button>
+    </main>
+
+    <script>
+        // Captura os dados do localStorage e exibe na página
+        document.getElementById("nomeResposta").textContent = localStorage.getItem("nome");
+        document.getElementById("emailResposta").textContent = localStorage.getItem("email");
+        document.getElementById("mensagemResposta").textContent = localStorage.getItem("mensagem");
+
+        // Adiciona um evento de clique ao botão para redirecionar
+        document.getElementById("voltarBtn").addEventListener("click", function() {
+            window.location.href = "index.html";  // Redireciona para a página inicial
+        });
+    </script>
+
+   
+</body>
+</html>
