@@ -1,0 +1,217 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sobre {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #333;
+}
+
+#sobre h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#sobre p {
+    font-size: 18px;
+    color: #666;
+    margin: 8px 0;
+}
+/* Estilos para a seção Formação Educacional */
+#formacao {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #333;
+}
+
+#formacao h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#formacao p {
+    font-size: 18px;
+    color: #666;
+    margin: 8px 0;
+}
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho e título */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Centralizando o menu de navegação */
+.menu-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos do menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Faz os itens do menu ficarem lado a lado */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para as seções */
+div {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: wh
+}
+
+/* Estilos para a seção Portfólio */
+#portfolio {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #333;
+}
+
+#portfolio h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a tabela */
+#portfolio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#portfolio table, #portfolio th, #portfolio td {
+    border: 1px solid #333;
+}
+
+#portfolio th, #portfolio td {
+    padding: 10px;
+    text-align: left;
+}
+
+#portfolio th {
+    background-color: #333;
+    color: white;
+}
+
+#portfolio td a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#portfolio td a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a seção Contato */
+#contato {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #333;
+}
+
+#contato h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o formulário */
+#contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato label {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+#contato input, #contato textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contato button {
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contato button:hover {
+    background-color: #555;
+}
+
+button {
+    background-color: hsl(120, 70%, 4%); /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
