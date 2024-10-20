@@ -1,217 +1,168 @@
-/* Reset básico para garantir consistência entre navegadores */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#sobre {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #333;
-}
-
-#sobre h2 {
-    color: #333;
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-#sobre p {
-    font-size: 18px;
-    color: #666;
-    margin: 8px 0;
-}
-/* Estilos para a seção Formação Educacional */
-#formacao {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #333;
-}
-
-#formacao h2 {
-    color: #333;
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-#formacao p {
-    font-size: 18px;
-    color: #666;
-    margin: 8px 0;
-}
-/* Corpo da página */
+/* Estilo global do corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    line-height: 1.6; 
+    background-color: #f4f4f4; 
     color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
-/* Estilos do cabeçalho e título */
+/* Estilos do cabeçalho */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background: #35424a;
+    color: #ffffff; 
+    padding: 10px 0; 
+}
+
+/* Estilo do título dentro do cabeçalho */
+.header-container h1 {
+    color: #4e4e4e; 
     text-align: center;
 }
 
-header h1 {
-    margin-bottom: 10px;
-}
-
-/* Centralizando o menu de navegação */
+/* Estilo do container do menu de navegação */
 .menu-container {
-    display: flex;
-    justify-content: center;
+    background: #35424a; 
 }
 
-/* Estilos do menu */
+/* Remove a lista padrão e centraliza os itens do menu */
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Faz os itens do menu ficarem lado a lado */
-}
-
-nav ul li {
-    margin: 0 15px; /* Espaçamento entre os itens do menu */
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para as seções */
-div {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: wh
-}
-
-/* Estilos para a seção Portfólio */
-#portfolio {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #333;
-}
-
-#portfolio h2 {
-    color: #333;
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-/* Estilo para a tabela */
-#portfolio table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-#portfolio table, #portfolio th, #portfolio td {
-    border: 1px solid #333;
-}
-
-#portfolio th, #portfolio td {
-    padding: 10px;
-    text-align: left;
-}
-
-#portfolio th {
-    background-color: #333;
-    color: white;
-}
-
-#portfolio td a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#portfolio td a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para a seção Contato */
-#contato {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #333;
-}
-
-#contato h2 {
-    color: #333;
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-/* Estilos para o formulário */
-#contato form {
+    list-style: none; 
+    padding: 0; 
     display: flex;
-    flex-direction: column;
+    justify-content: center; 
 }
 
-#contato label {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 5px;
+/* Espaçamento horizontal entre os itens do menu */
+nav ul li {
+    margin: 0 15px;
 }
 
-#contato input, #contato textarea {
-    font-size: 16px;
+/* Estilos dos links do menu */
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+    transition: background 0.3s; 
+}
+
+/* Efeito de hover para os links do menu */
+nav ul li a:hover {
+    background: #5a6e79; 
+    border-radius: 5px;
+}
+
+/* Estilo global para os títulos */
+h2 {
+    margin: 20px 0; 
+    color: #35424a;
+}
+
+/* Estilos para todas as divs da página */
+div {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px; 
+    background: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da tabela no portfólio */
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+
+/* Estilos para as células da tabela */
+table th, table td {
     padding: 10px;
-    margin-bottom: 15px;
+    border: 1px solid #ddd; 
+    text-align: left; 
+}
+
+/* Estilo para os cabeçalhos da tabela */
+table th {
+    background: #35424a; 
+    color: #ffffff; 
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* Margem entre os rótulos e os campos */
+form label {
+    margin: 10px 0 5px;
+}
+
+/* Estilos dos inputs e textarea */
+form input, form textarea {
+    padding: 10px; 
     border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
+    border-radius: 4px; 
 }
 
-#contato button {
-    background-color: #333;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    border: none;
+/* Estilos do botão de envio do formulário */
+form button {
+    margin-top: 10px; 
+    padding: 10px;
+    border: none; 
     border-radius: 4px;
+    background: #35424a;
+    color: #ffffff; 
     cursor: pointer;
+    transition: background 0.3s; 
 }
 
-#contato button:hover {
-    background-color: #555;
+/* Efeito de hover no botão de envio */
+form button:hover {
+    background: #5a6e79; 
 }
 
+/* Estilos para telas pequenas (responsivo) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+}
+
+/* Estilo adicional para a div de conteúdo */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 5px solid #000000; 
+    background: #ffffff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo dos botões gerais */
 button {
-    background-color: hsl(120, 70%, 4%); /* Cor de fundo verde */
-    color: white; /* Cor do texto */
-    padding: 10px 15px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    padding: 10px 20px; 
+    background-color: #101111; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
 }
 
+/* Efeito de hover nos botões */
 button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    background-color: #0056b3; /* Cor ao passar o mouse */
 }
