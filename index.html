@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
-        <h1> Portfólio pessoal </h1>
-
+        <div class="header-container">
+            <h1>Portfólio Pessoal</h1>
+        </div>
         <div class="menu-container">
             <nav>
                 <ul>
@@ -22,8 +23,7 @@
         </div>
     </header>
 
-    <div id="sobre">
-
+    <div class="content" id="sobre">
         <h2>Sobre Mim</h2>
         <h3>Valmor Tambosi Junior</h3>
         <p>Analista de sistemas pleno no Grupo Uninter</p>
@@ -31,22 +31,18 @@
         <p>Pai do Victor Yuri Fernandes Tambosi</p>
         <p>Entusiasta de tecnologia, Ciclista, Corinthiano, geek </p>
         <p>Adepto a frase Missão dada é missão cumprida.</p>  
-   
-    </div>   
-
-    <div id="formacao">
-
-            <h2>Formação Educacional</h2>
-            <p>Formando no curso Sequencial de Desenvolimento de Software Coorporativo - Puc-Pr</p>
-            <p>Pós Graduação em Gerenciamento de projetos - Uninter</p>
-            <p>Cursando Bacharelado em Engenharia de Software - Uninter </p>
-            <p>Idiomas: ...</p>
+    </div>
+    
+    <div class="content" id="formacao">
+        <h2>Formação Educacional</h2>
+        <p>Formando no curso Sequencial de Desenvolvimento de Software Corporativo - Puc-Pr</p>
+        <p>Pós Graduação em Gerenciamento de projetos - Uninter</p>
+        <p>Cursando Bacharelado em Engenharia de Software - Uninter </p>
+        <p>Idiomas: ...</p>
     </div>  
     
-    <div id="portfolio">
-    
+    <div class="content" id="portfolio">
         <h2>Portfólio</h2>
-
         <table>
             <tr>
                 <th>Projeto</th>
@@ -66,25 +62,24 @@
             </tr>
         </table>
     </div>
-
-
-    <div id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo através de ...</p>
-            <form id="contatoForm">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Seu email" required>
-                
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>    
+    
+    <div class="content" id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através de ...</p>
+        <form id="contatoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>    
     </div>
-
+    
     <script src="formulario.js"></script>
 
 
